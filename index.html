@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm">
+    <!-- navigation -->
+    <nav class="container navbar navbar-expand-sm">
         <div class="container-fluid">
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-content" aria-controls="" type="button">
                 <span class="navbar-toggler-icon"></span>
@@ -29,7 +30,9 @@
             </div>
         </div>
     </nav>
-    <!-- modal -->
+    <!-- end of navigation -->
+    
+    <!-- modal for sign up -->
     <div class="modal" id="signup">
         <!-- modal-dialog-centered to center modal -->
         <div class="modal-dialog">
@@ -45,12 +48,660 @@
                     <input class="form-control" type="password" name="password" id="password">
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-primary">Sign Up</button>
                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
                 </div>
             </div>
         </div>
     </div>
+    <!-- end of modal sign up -->
+
+    <!-- modal card navigation accordion for one piece saga -->
+    <div class="modal" id="arcs">
+        <!-- modal-dialog-centered to center modal -->
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="modal-header">
+                            <h5>One Piece Saga</h5>
+                            <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#eastblue">East Blue</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#arabastaSaga">Arabasta</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <!-- East blue -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="eastblue">
+                                <!-- accordion -->
+                                <div class="accordion" id="east-blue">
+                                    <!-- romance dawn -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1">
+                                            <!-- data-bs-toggle="collapse" HTML attribute for bootstrap can use collapse or dropdown  -->
+                                            <!--  data-bs-target="#collapseHtml" targets the ID of the html element -->
+                                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#romanceDawn">Romance Dawn Arc</button>
+                                        </h2>
+                                        <!-- data-bs-parent="east-blue" targets the parent container -->
+                                        <div class="accordion-collapse collapse" id="romanceDawn" data-bs-parent="east-blue">
+                                            <div class="card-body text-center">
+                                                <!-- carousel -->
+                                                <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover" id="karosel">
+                                                    <!-- carousel indicators -->
+                                                    <div class="carousel-indicators">
+                                                        <li data-bs-target="#karosel" data-bs-slide-to="0" class="active"></li>
+                                                        <li data-bs-target="#karosel" data-bs-slide-to="1"></li>
+                                                        <li data-bs-target="#karosel" data-bs-slide-to="2"></li>
+                                                        <li data-bs-target="#karosel" data-bs-slide-to="3"></li>
+                                                        <li data-bs-target="#karosel" data-bs-slide-to="4"></li>
+                                                        <li data-bs-target="#karosel" data-bs-slide-to="5"></li>
+                                                        <li data-bs-target="#karosel" data-bs-slide-to="6"></li>
+                                                        <li data-bs-target="#karosel" data-bs-slide-to="7"></li>
+                                                        <li data-bs-target="#karosel" data-bs-slide-to="8"></li>
+                                                    </div>
+                                                    <!-- carousel-inner the main body of the carousel -->
+                                                    <div class="carousel-inner">
+                                                        <!-- carousel-item the content of each items -->
+                                                        <div class="carousel-item active">
+                                                            <img class=" img-fluid" width="100%" src="image/romanceDawn/luffy-shanks.png" alt="karosel">
+                                                        </div>
+                                                        <!-- d-mb-block d-none for removing image captions -->
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/romanceDawn/roger.png" alt="karosel">
+                                                        </div>
+                                            
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/romanceDawn/shanks.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/romanceDawn/luffy.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/romanceDawn/shanks-luffy.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/romanceDawn/alvida.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/romanceDawn/zoro.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/romanceDawn/koby.png" alt="karosel">
+                                                        </div>
+                                                    </div>
+                                                    <!-- carousel controls for the previous and next page of the carousel -->
+                                                    <a href="#karosel"class="carousel-control-prev" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+                                                    <a href="#karosel"class="carousel-control-next" data-bs-slide="next"><span class="carousel-control-next-icon"></span></a>
+                                                </div>
+                                                <p>
+                                                    Influenced by Shanks, Luffy starts his journey to become the Pirate King. At the beginning of his journey, he meets a boy named Koby, who wants to become a Marine. They reach Shells Town, where they meet corrupt Marine captain Axe-Hand Morgan, his son Helmeppo, and the pirate hunter Roronoa Zoro.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- orange town -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1">
+                                            <!-- data-bs-toggle="collapse" HTML attribute for bootstrap can use collapse or dropdown  -->
+                                            <!--  data-bs-target="#collapseHtml" targets the ID of the html element -->
+                                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#orangeDawn">Orange Dawn Arc</button>
+                                        </h2>
+                                        <!-- data-bs-parent="frontEndAccordion" targets the parent container -->
+                                        <div class="accordion-collapse collapse" id="orangeDawn" data-bs-parent="frontEndAccordion">
+                                            <div class="card-body text-center">
+                                                <!-- carousel -->
+                                                <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover" id="orange">
+                                                    <!-- carousel indicators -->
+                                                    <div class="carousel-indicators">
+                                                        <li data-bs-target="#orange" data-bs-slide-to="0" class="active"></li>
+                                                        <li data-bs-target="#orange" data-bs-slide-to="1"></li>
+                                                        <li data-bs-target="#orange" data-bs-slide-to="2"></li>
+                                                        <li data-bs-target="#orange" data-bs-slide-to="3"></li>
+                                                        <li data-bs-target="#orange" data-bs-slide-to="4"></li>
+                                                    </div>
+                                                    <!-- carousel-inner the main body of the carousel -->
+                                                    <div class="carousel-inner">
+                                                        <!-- carousel-item the content of each items -->
+                                                        <div class="carousel-item active">
+                                                            <img class=" img-fluid" width="100%" src="image/orangeDawn/orange.png" alt="karosel">
+                                                        </div>
+                                                        <!-- d-mb-block d-none for removing image captions -->
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/orangeDawn/luffy.png" alt="karosel">
+                                                        </div>
+                                            
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/orangeDawn/lion.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/orangeDawn/zoro.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/orangeDawn/buggy.png" alt="karosel">
+                                                        </div>
+                                                    </div>
+                                                    <!-- carousel controls for the previous and next page of the carousel -->
+                                                    <a href="#orange"class="carousel-control-prev" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+                                                    <a href="#orange"class="carousel-control-next" data-bs-slide="next"><span class="carousel-control-next-icon"></span></a>
+                                                </div>
+                                                <p>
+                                                    As Luffy and Zoro aimlessly sail across the sea, they end up at Orange Town, an island under siege by clown-themed pirate Buggy and his crew. There, Luffy meets a pirate-targeting burglar, Nami, who he wishes to recruit into his crew as his navigator.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- syrup village -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1">
+                                            <!-- data-bs-toggle="collapse" HTML attribute for bootstrap can use collapse or dropdown  -->
+                                            <!--  data-bs-target="#collapseHtml" targets the ID of the html element -->
+                                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#syrupArc">Syrup Village Arc</button>
+                                        </h2>
+                                        <!-- data-bs-parent="frontEndAccordion" targets the parent container -->
+                                        <div class="accordion-collapse collapse" id="syrupArc" data-bs-parent="frontEndAccordion">
+                                            <div class="card-body text-center">
+                                                <!-- carousel -->
+                                                <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover" id="syrup">
+                                                    <!-- carousel indicators -->
+                                                    <div class="carousel-indicators">
+                                                        <li data-bs-target="#syrup" data-bs-slide-to="0" class="active"></li>
+                                                        <li data-bs-target="#syrup" data-bs-slide-to="1"></li>
+                                                        <li data-bs-target="#syrup" data-bs-slide-to="2"></li>
+                                                        <li data-bs-target="#syrup" data-bs-slide-to="3"></li>
+                                                    </div>
+                                                    <!-- carousel-inner the main body of the carousel -->
+                                                    <div class="carousel-inner">
+                                                        <!-- carousel-item the content of each items -->
+                                                        <div class="carousel-item active">
+                                                            <img class=" img-fluid" width="100%" src="image/syrup/Syrup.png" alt="karosel">
+                                                        </div>
+                                                        <!-- d-mb-block d-none for removing image captions -->
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/syrup/syrup1.png" alt="karosel">
+                                                        </div>
+                                            
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/syrup/ussop.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/syrup/syrup2.png" alt="karosel">
+                                                        </div>
+                                                    </div>
+                                                    <!-- carousel controls for the previous and next page of the carousel -->
+                                                    <a href="#syrup"class="carousel-control-prev" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+                                                    <a href="#syrup"class="carousel-control-next" data-bs-slide="next"><span class="carousel-control-next-icon"></span></a>
+                                                </div>
+                                                <p>
+                                                    Luffy, Zoro and Nami arrive at Syrup Village looking for a ship, where they meet Usopp, the local village liar. After they learn of a secret plot against Usopp's friend Kaya, they decide they have no choice but to help him defeat Captain Kuro in order to save her.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- baratie -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1">
+                                            <!-- data-bs-toggle="collapse" HTML attribute for bootstrap can use collapse or dropdown  -->
+                                            <!--  data-bs-target="#collapseHtml" targets the ID of the html element -->
+                                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#baratieArc">Baratie Arc</button>
+                                        </h2>
+                                        <!-- data-bs-parent="frontEndAccordion" targets the parent container -->
+                                        <div class="accordion-collapse collapse" id="baratieArc" data-bs-parent="frontEndAccordion">
+                                            <div class="card-body text-center">
+                                                <!-- carousel -->
+                                                <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover" id="baratie">
+                                                    <!-- carousel indicators -->
+                                                    <div class="carousel-indicators">
+                                                        <li data-bs-target="#baratie" data-bs-slide-to="0" class="active"></li>
+                                                        <li data-bs-target="#baratie" data-bs-slide-to="1"></li>
+                                                        <li data-bs-target="#baratie" data-bs-slide-to="2"></li>
+                                                        <li data-bs-target="#baratie" data-bs-slide-to="3"></li>
+                                                        <li data-bs-target="#baratie" data-bs-slide-to="4"></li>
+                                                    </div>
+                                                    <!-- carousel-inner the main body of the carousel -->
+                                                    <div class="carousel-inner">
+                                                        <!-- carousel-item the content of each items -->
+                                                        <div class="carousel-item active">
+                                                            <img class=" img-fluid" width="100%" src="image/baratie/baratie.png" alt="karosel">
+                                                        </div>
+                                                        <!-- d-mb-block d-none for removing image captions -->
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/baratie/sanji.png" alt="karosel">
+                                                        </div>
+                                            
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/baratie/mihawk.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/baratie/krieg.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/baratie/zeff.png" alt="karosel">
+                                                        </div>
+                                                    </div>
+                                                    <!-- carousel controls for the previous and next page of the carousel -->
+                                                    <a href="#baratie"class="carousel-control-prev" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+                                                    <a href="#baratie"class="carousel-control-next" data-bs-slide="next"><span class="carousel-control-next-icon"></span></a>
+                                                </div>
+                                                <p>
+                                                    The Straw Hat Pirates meet Johnny and Yosaku, old friends of Zoro, who direct them to the restaurant ship Baratie, a "floating oasis" in the middle of the ocean. There they meet chef Sanji, who Luffy wishes to recruit as his crew's cook. However, pirate admiral Don Krieg sets his sights on the Baratie as a replacement for his devastated fleet, and the restaurant soon comes under siege. As the battle breaks out, Zoro comes face to face with his ultimate rival, Dracule Mihawk, while Nami absconds with the Going Merry, forcing the crew to split up and take chase while Luffy protects the Baratie from Krieg.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- arlong park -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1">
+                                            <!-- data-bs-toggle="collapse" HTML attribute for bootstrap can use collapse or dropdown  -->
+                                            <!--  data-bs-target="#collapseHtml" targets the ID of the html element -->
+                                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#arlongPark">Arlong Park Arc</button>
+                                        </h2>
+                                        <!-- data-bs-parent="frontEndAccordion" targets the parent container -->
+                                        <div class="accordion-collapse collapse" id="arlongPark" data-bs-parent="frontEndAccordion">
+                                            <div class="card-body text-center">
+                                                <!-- carousel -->
+                                                <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover" id="arlong">
+                                                    <!-- carousel indicators -->
+                                                    <div class="carousel-indicators">
+                                                        <li data-bs-target="#arlong" data-bs-slide-to="0" class="active"></li>
+                                                        <li data-bs-target="#arlong" data-bs-slide-to="1"></li>
+                                                        <li data-bs-target="#arlong" data-bs-slide-to="2"></li>
+                                                        <li data-bs-target="#arlong" data-bs-slide-to="3"></li>
+                                                        <li data-bs-target="#arlong" data-bs-slide-to="4"></li>
+                                                    </div>
+                                                    <!-- carousel-inner the main body of the carousel -->
+                                                    <div class="carousel-inner">
+                                                        <!-- carousel-item the content of each items -->
+                                                        <div class="carousel-item active">
+                                                            <img class=" img-fluid" width="100%" src="image/arlong/arlong.png" alt="karosel">
+                                                        </div>
+                                                        <!-- d-mb-block d-none for removing image captions -->
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/arlong/nami.png" alt="karosel">
+                                                        </div>
+                                            
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/arlong/hachi.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/arlong/luffy.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/arlong/windmill.png" alt="karosel">
+                                                        </div>
+                                                    </div>
+                                                    <!-- carousel controls for the previous and next page of the carousel -->
+                                                    <a href="#loguetown"class="carousel-control-prev" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+                                                    <a href="#loguetown"class="carousel-control-next" data-bs-slide="next"><span class="carousel-control-next-icon"></span></a>
+                                                </div>
+                                                <p>
+                                                    Zoro, Usopp and Johnny track Nami, who stole the Going Merry, to Cocoyasi Village, her hometown. They discover that it is ruled by Arlong and the Arlong Pirates, a pirate crew of Fish-Men of which Nami is a member. After Luffy and his new cook Sanji arrive on the island with Yosaku, Nami's past and true motives come to light. The Straw Hats decide to free both her and the village from the Fish-Men's claws.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- loguetown -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1">
+                                            <!-- data-bs-toggle="collapse" HTML attribute for bootstrap can use collapse or dropdown  -->
+                                            <!--  data-bs-target="#collapseHtml" targets the ID of the html element -->
+                                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#loguetownArc">Loguetown Arc</button>
+                                        </h2>
+                                        <!-- data-bs-parent="frontEndAccordion" targets the parent container -->
+                                        <div class="accordion-collapse collapse" id="loguetownArc" data-bs-parent="frontEndAccordion">
+                                            <div class="card-body text-center">
+                                                <!-- carousel -->
+                                                <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover" id="loguetown">
+                                                    <!-- carousel indicators -->
+                                                    <div class="carousel-indicators">
+                                                        <li data-bs-target="#loguetown" data-bs-slide-to="0" class="active"></li>
+                                                        <li data-bs-target="#loguetown" data-bs-slide-to="1"></li>
+                                                        <li data-bs-target="#loguetown" data-bs-slide-to="2"></li>
+                                                        <li data-bs-target="#loguetown" data-bs-slide-to="3"></li>
+                                                        <li data-bs-target="#loguetown" data-bs-slide-to="4"></li>
+                                                    </div>
+                                                    <!-- carousel-inner the main body of the carousel -->
+                                                    <div class="carousel-inner">
+                                                        <!-- carousel-item the content of each items -->
+                                                        <div class="carousel-item active">
+                                                            <img class=" img-fluid" width="100%" src="image/loguetown/Loguetown.png" alt="karosel">
+                                                        </div>
+                                                        <!-- d-mb-block d-none for removing image captions -->
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/loguetown/Loguetown2.png" alt="karosel">
+                                                        </div>
+                                            
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/loguetown/luffy.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/loguetown/smoker.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/loguetown/vow.png" alt="karosel">
+                                                        </div>
+                                                    </div>
+                                                    <!-- carousel controls for the previous and next page of the carousel -->
+                                                    <a href="#loguetown"class="carousel-control-prev" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+                                                    <a href="#loguetown"class="carousel-control-next" data-bs-slide="next"><span class="carousel-control-next-icon"></span></a>
+                                                </div>
+                                                <p>
+                                                    Zoro, Usopp and Johnny track Nami, who stole the Going Merry, to Cocoyasi Village, her hometown. They discover that it is ruled by Arlong and the Arlong Pirates, a pirate crew of Fish-Men of which Nami is a member. After Luffy and his new cook Sanji arrive on the island with Yosaku, Nami's past and true motives come to light. The Straw Hats decide to free both her and the village from the Fish-Men's claws.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- end of accordion -->
+                            </div>
+                        </div>
+                        <!-- Arabasta -->
+                        <div class="tab-content">
+                            <div class="tab-pane" id="arabastaSaga">
+                                <!-- accordion -->
+                                <div class="accordion" id="">
+                                    <!-- Reverse Mountain -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1">
+                                            <!-- data-bs-toggle="collapse" HTML attribute for bootstrap can use collapse or dropdown  -->
+                                            <!--  data-bs-target="#collapseHtml" targets the ID of the html element -->
+                                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#reverseMountain">Reverse Mountain Arc</button>
+                                        </h2>
+                                        <!-- data-bs-parent="east-blue" targets the parent container -->
+                                        <div class="accordion-collapse collapse" id="reverseMountain" data-bs-parent="east-blue">
+                                            <div class="card-body text-center">
+                                                <!-- carousel -->
+                                                <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover" id="reverse">
+                                                    <!-- carousel indicators -->
+                                                    <div class="carousel-indicators">
+                                                        <li data-bs-target="#reverse" data-bs-slide-to="0" class="active"></li>
+                                                        <li data-bs-target="#reverse" data-bs-slide-to="1"></li>
+                                                        <li data-bs-target="#reverse" data-bs-slide-to="2"></li>
+                                                    </div>
+                                                    <!-- carousel-inner the main body of the carousel -->
+                                                    <div class="carousel-inner">
+                                                        <!-- carousel-item the content of each items -->
+                                                        <div class="carousel-item active">
+                                                            <img class=" img-fluid" width="100%" src="image/reverse/Laboon.png" alt="karosel">
+                                                        </div>
+                                                        <!-- d-mb-block d-none for removing image captions -->
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/reverse/laboon2.png" alt="karosel">
+                                                        </div>
+                                            
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/reverse/logpose.png" alt="karosel">
+                                                        </div>
+                                                    </div>
+                                                    <!-- carousel controls for the previous and next page of the carousel -->
+                                                    <a href="#reverse"class="carousel-control-prev" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+                                                    <a href="#reverse"class="carousel-control-next" data-bs-slide="next"><span class="carousel-control-next-icon"></span></a>
+                                                </div>
+                                                <p>
+                                                    The Straw Hat Pirates make their way to Reverse Mountain and begin the perilous task of scaling its tricky rapids in order to enter the Grand Line. As they descend the mountain, they come face to face with not only the giant whale Laboon, but also mysterious agents Mr. 9 and Miss Wednesday.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Whisky peak -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1">
+                                            <!-- data-bs-toggle="collapse" HTML attribute for bootstrap can use collapse or dropdown  -->
+                                            <!--  data-bs-target="#collapseHtml" targets the ID of the html element -->
+                                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#whiskyPeak">Whisky Peak Arc</button>
+                                        </h2>
+                                        <!-- data-bs-parent="frontEndAccordion" targets the parent container -->
+                                        <div class="accordion-collapse collapse" id="whiskyPeak" data-bs-parent="frontEndAccordion">
+                                            <div class="card-body text-center">
+                                                <!-- carousel -->
+                                                <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover" id="whisky">
+                                                    <!-- carousel indicators -->
+                                                    <div class="carousel-indicators">
+                                                        <li data-bs-target="#whisky" data-bs-slide-to="0" class="active"></li>
+                                                        <li data-bs-target="#whisky" data-bs-slide-to="1"></li>
+                                                        <li data-bs-target="#whisky" data-bs-slide-to="2"></li>
+                                                        <li data-bs-target="#whisky" data-bs-slide-to="3"></li>
+                                                        <li data-bs-target="#whisky" data-bs-slide-to="4"></li>
+                                                    </div>
+                                                    <!-- carousel-inner the main body of the carousel -->
+                                                    <div class="carousel-inner">
+                                                        <!-- carousel-item the content of each items -->
+                                                        <div class="carousel-item active">
+                                                            <img class=" img-fluid" width="100%" src="image/whisky/whisky.png" alt="karosel">
+                                                        </div>
+                                                        <!-- d-mb-block d-none for removing image captions -->
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/whisky/whisky2.png" alt="karosel">
+                                                        </div>
+                                            
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/whisky/vivi.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/whisky/luffyzoro.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/whisky/draw.png" alt="karosel">
+                                                        </div>
+                                                    </div>
+                                                    <!-- carousel controls for the previous and next page of the carousel -->
+                                                    <a href="#whisky"class="carousel-control-prev" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+                                                    <a href="#whisky"class="carousel-control-next" data-bs-slide="next"><span class="carousel-control-next-icon"></span></a>
+                                                </div>
+                                                <p>
+                                                    With a Log Pose now in hand, the Straw Hat Pirates are directed toward Whisky Peak, a town that welcomes pirates with open arms and treats them like celebrities. However, the townsfolk have a dark secret, and an even deeper mystery awaits.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Little Garden -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1">
+                                            <!-- data-bs-toggle="collapse" HTML attribute for bootstrap can use collapse or dropdown  -->
+                                            <!--  data-bs-target="#collapseHtml" targets the ID of the html element -->
+                                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#littleGarden">Little Garden Arc</button>
+                                        </h2>
+                                        <!-- data-bs-parent="frontEndAccordion" targets the parent container -->
+                                        <div class="accordion-collapse collapse" id="littleGarden" data-bs-parent="frontEndAccordion">
+                                            <div class="card-body text-center">
+                                                <!-- carousel -->
+                                                <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover" id="little">
+                                                    <!-- carousel indicators -->
+                                                    <div class="carousel-indicators">
+                                                        <li data-bs-target="#little" data-bs-slide-to="0" class="active"></li>
+                                                        <li data-bs-target="#little" data-bs-slide-to="1"></li>
+                                                        <li data-bs-target="#little" data-bs-slide-to="2"></li>
+                                                        <li data-bs-target="#little" data-bs-slide-to="3"></li>
+                                                        <li data-bs-target="#little" data-bs-slide-to="4"></li>
+                                                    </div>
+                                                    <!-- carousel-inner the main body of the carousel -->
+                                                    <div class="carousel-inner">
+                                                        <!-- carousel-item the content of each items -->
+                                                        <div class="carousel-item active">
+                                                            <img class=" img-fluid" width="100%" src="image/little/little.png" alt="karosel">
+                                                        </div>
+                                                        <!-- d-mb-block d-none for removing image captions -->
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/little/ussop.png" alt="karosel">
+                                                        </div>
+                                            
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/little/candle.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/little/mr3.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/little/little2.png" alt="karosel">
+                                                        </div>
+                                                    </div>
+                                                    <!-- carousel controls for the previous and next page of the carousel -->
+                                                    <a href="#little"class="carousel-control-prev" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+                                                    <a href="#little"class="carousel-control-next" data-bs-slide="next"><span class="carousel-control-next-icon"></span></a>
+                                                </div>
+                                                <p>
+                                                    Now with Vivi in tow, the Straw Hat Pirates travel to the prehistoric island of Little Garden. There, they encounter two Giants, Dorry and Brogy, who have been dueling one another on the island for the past century. After befriending the giants, the crew are ambushed by new and familiar officers of Baroque Works.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Drum Island -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1">
+                                            <!-- data-bs-toggle="collapse" HTML attribute for bootstrap can use collapse or dropdown  -->
+                                            <!--  data-bs-target="#collapseHtml" targets the ID of the html element -->
+                                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#drumIsland">Drum Island Arc</button>
+                                        </h2>
+                                        <!-- data-bs-parent="frontEndAccordion" targets the parent container -->
+                                        <div class="accordion-collapse collapse" id="drumIsland" data-bs-parent="frontEndAccordion">
+                                            <div class="card-body text-center">
+                                                <!-- carousel -->
+                                                <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover" id="drum">
+                                                    <!-- carousel indicators -->
+                                                    <div class="carousel-indicators">
+                                                        <li data-bs-target="#drum" data-bs-slide-to="0" class="active"></li>
+                                                        <li data-bs-target="#drum" data-bs-slide-to="1"></li>
+                                                        <li data-bs-target="#drum" data-bs-slide-to="2"></li>
+                                                        <li data-bs-target="#drum" data-bs-slide-to="3"></li>
+                                                        <li data-bs-target="#drum" data-bs-slide-to="4"></li>
+                                                        <li data-bs-target="#drum" data-bs-slide-to="5"></li>
+                                                        <li data-bs-target="#drum" data-bs-slide-to="6"></li>
+                                                    </div>
+                                                    <!-- carousel-inner the main body of the carousel -->
+                                                    <div class="carousel-inner">
+                                                        <!-- carousel-item the content of each items -->
+                                                        <div class="carousel-item active">
+                                                            <img class=" img-fluid" width="100%" src="image/drum/drum.png" alt="karosel">
+                                                        </div>
+                                                        <!-- d-mb-block d-none for removing image captions -->
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/drum/wapol.png" alt="karosel">
+                                                        </div>
+                                            
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/drum/luffy.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/drum/chopper.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/drum/wapol2.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/drum/luffy2.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/drum/sakura.png" alt="karosel">
+                                                        </div>
+                                                    </div>
+                                                    <!-- carousel controls for the previous and next page of the carousel -->
+                                                    <a href="#drum"class="carousel-control-prev" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+                                                    <a href="#drum"class="carousel-control-next" data-bs-slide="next"><span class="carousel-control-next-icon"></span></a>
+                                                </div>
+                                                <p>
+                                                    After Nami falls ill with an unknown disease, the Straw Hat Pirates travel to Drum Island in search of a doctor. The crew meets a bizarre talking reindeer named Tony Tony Chopper, who helps them fend off the country's former despot king Wapol after he returns to reclaim his throne.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Arabasta -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1">
+                                            <!-- data-bs-toggle="collapse" HTML attribute for bootstrap can use collapse or dropdown  -->
+                                            <!--  data-bs-target="#collapseHtml" targets the ID of the html element -->
+                                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#arabastaArc">Arabasta Arc</button>
+                                        </h2>
+                                        <!-- data-bs-parent="frontEndAccordion" targets the parent container -->
+                                        <div class="accordion-collapse collapse" id="arabastaArc" data-bs-parent="frontEndAccordion">
+                                            <div class="card-body text-center">
+                                                <!-- carousel -->
+                                                <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover" id="arabasta">
+                                                    <!-- carousel indicators -->
+                                                    <div class="carousel-indicators">
+                                                        <li data-bs-target="#arabasta" data-bs-slide-to="0" class="active"></li>
+                                                        <li data-bs-target="#arabasta" data-bs-slide-to="1"></li>
+                                                        <li data-bs-target="#arabasta" data-bs-slide-to="2"></li>
+                                                        <li data-bs-target="#arabasta" data-bs-slide-to="3"></li>
+                                                        <li data-bs-target="#arabasta" data-bs-slide-to="4"></li>
+                                                        <li data-bs-target="#arabasta" data-bs-slide-to="5"></li>
+                                                        <li data-bs-target="#arabasta" data-bs-slide-to="6"></li>
+                                                        <li data-bs-target="#arabasta" data-bs-slide-to="7"></li>
+                                                        <li data-bs-target="#arabasta" data-bs-slide-to="8"></li>
+                                                        <li data-bs-target="#arabasta" data-bs-slide-to="9"></li>
+                                                        <li data-bs-target="#arabasta" data-bs-slide-to="10"></li>
+                                                        <li data-bs-target="#arabasta" data-bs-slide-to="11"></li>
+                                                    </div>
+                                                    <!-- carousel-inner the main body of the carousel -->
+                                                    <div class="carousel-inner">
+                                                        <!-- carousel-item the content of each items -->
+                                                        <div class="carousel-item active">
+                                                            <img class=" img-fluid" width="100%" src="image/arabasta/arabasta.png" alt="karosel">
+                                                        </div>
+                                                        <!-- d-mb-block d-none for removing image captions -->
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/arabasta/mr2.png" alt="karosel">
+                                                        </div>
+                                            
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/arabasta/ace.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/arabasta/crocodile.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/arabasta/key.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/arabasta/crocodile2.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/arabasta/Mr._2_vs._Sanji.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/arabasta/Miss_Doublefinger_Defeated.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/arabasta/The_Defeat_of_Mr._1.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/arabasta/Luffy_Defeated_by_Crocodile_Fight_2.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/arabasta/luffycrocodile.png" alt="karosel">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class=" img-fluid" width="100%" src="image/arabasta/Straw_Hat_Friendship_X_Mark.png" alt="karosel">
+                                                        </div>
+                                                    </div>
+                                                    <!-- carousel controls for the previous and next page of the carousel -->
+                                                    <a href="#arabasta"class="carousel-control-prev" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+                                                    <a href="#arabasta"class="carousel-control-next" data-bs-slide="next"><span class="carousel-control-next-icon"></span></a>
+                                                </div>
+                                                <p>
+                                                    The Straw Hats finally reach the desert kingdom of Arabasta and begin their race across the land to reach Alubarna before a massive war can break out between the kingdom's royal guards and the rebels. However, the true perpetrator of the war, Mr. 0, and his remaining Baroque Works officer agents stand in the way of the Straw Hats reaching their goal.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of accordion -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of modal saga -->
+
+    <!-- main content -->
     <main>
         <section class="hidden">
             <h1 class="adventure">Adventure Starts Here</h1>
@@ -62,7 +713,7 @@
                 <div class="col-md-6 item1 text-center d-flex align-items-center">
                     <div>
                         <h1>East Blue Saga</h1>
-                        <p  class="px-5">Monkey D. Luffy meets Shanks as a young boy living in East Blue. This is where he recruits most of his crew and, ultimately, where the adventure begins. This saga is made up of six story arcs. <a href="#">See more</a></p>
+                        <p  class="px-5">Monkey D. Luffy meets Shanks as a young boy living in East Blue. This is where he recruits most of his crew and, ultimately, where the adventure begins. This saga is made up of six story arcs. <a data-bs-toggle="modal" data-bs-target="#arcs" type="button" class="text-primary">See more</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 item2 d-flex align-items-center">
@@ -75,7 +726,7 @@
                 <div class="col-md-6 item1 text-center d-flex align-items-center">
                     <div>
                         <h1>One Piece Latest Update</h1>
-                        <p class="px-5">Join Monkey D. Luffy and his swashbuckling crew in their search for the ultimate treasure, the One Piece. <a href="#">See more</a></p>
+                        <p class="px-5">Join Monkey D. Luffy and his swashbuckling crew in their search for the ultimate treasure, the One Piece. <a href="event.html#episode">See more</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 item2 d-flex align-items-center">
@@ -89,7 +740,7 @@
                 <div class="col-md-6 item1 text-center d-flex align-items-center">
                     <div>
                         <h1>One Piece Film RED</h1>
-                        <p  class="px-5">For the first time ever, Uta - the most beloved singer in the world - will reveal herself to the world at a live concert. The voice that the whole world has been waiting for is about to resound. <a href="#">See more</a></p>
+                        <p  class="px-5">For the first time ever, Uta - the most beloved singer in the world - will reveal herself to the world at a live concert. The voice that the whole world has been waiting for is about to resound. <a href="event.html#movie">See more</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 item2 d-flex align-items-center">
@@ -103,7 +754,7 @@
                 <div class="col-md-6 item1 text-center d-flex align-items-center">
                     <div>
                         <h1>One Piece Anniversary</h1>
-                        <p class="px-5">One Piece is celebrating its 25th anniversary. The best selling manga series of all time is also now entering into its final saga. <a href="#">See more</a></p>
+                        <p class="px-5">One Piece is celebrating its 25th anniversary. The best selling manga series of all time is also now entering into its final saga. <a href="event.html#anniversary">See more</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 item2 d-flex align-items-center">
@@ -121,19 +772,21 @@
             </div>
         </section>
     </main>
+    <!-- end of main content -->
 
+    <!-- footer -->
     <footer  class="footer mt-5">
         <div class="container-fluid mt-3">
             <div class="row">
                 <div class="col-lg-4 col-sm-12">
                     <div class="col text-center">
-                        <h4><a href="" class="nav-link">One Piece Magazine</a></h4>
+                        <h4><a href="#" class="nav-link">One Piece Magazine</a></h4>
                         <div class="links d-flex justify-content-center">
                             <ul class="nav">
-                                <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-facebook"></i></a></li>
-                                <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-instagram"></i></a></li>
-                                <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-twitter-x"></i></a></li>
-                                <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-discord"></i></a></li>
+                                <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.facebook.com"><i class="bi bi-facebook"></i></a></li>
+                                <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.instagram.com"><i class="bi bi-instagram"></i></a></li>
+                                <li class="nav-item"><a class="nav-link" target="_blank" href="https://twitter.com"><i class="bi bi-twitter-x"></i></a></li>
+                                <li class="nav-item"><a class="nav-link" target="_blank" href="https://discord.com"><i class="bi bi-discord"></i></a></li>
                             </ul>
                         </div>
                         <div></div>
@@ -147,34 +800,34 @@
                         <div class="col-3">
                             <h4><a href="" class="nav-link">Event</a></h4>
                             <ul class="nav">
-                                <li><a class="nav-link" href="#">Latest Update</a></li>
-                                <li><a class="nav-link" href="">One Piece Movies</a></li>
-                                <li><a class="nav-link" href="">One Piece Anniversary</a></li>
+                                <li><a class="nav-link" href="event.html#episode">Latest Update</a></li>
+                                <li><a class="nav-link" href="event.html#movie">One Piece Movies</a></li>
+                                <li><a class="nav-link" href="event.html#anniversary">One Piece Anniversary</a></li>
                             </ul>
                         </div>
                         <div class="col-3">
                             <h4><a href="" class="nav-link">Character</a></h4>
                             <ul class="nav">
-                                <li><a class="nav-link" href="#">Strawhat Pirates</a></li>
-                                <li><a class="nav-link" href="#">Roger Pirates</a></li>
-                                <li><a class="nav-link" href="#">Blackbeard Pirates</a></li>
-                                <li><a class="nav-link" href="#">Whitebeard Pirates</a></li>
+                                <li><a class="nav-link" href="character.html#straw">Strawhat Pirates</a></li>
+                                <li><a class="nav-link" href="character.html#straw">Roger Pirates</a></li>
+                                <li><a class="nav-link" href="character.html#straw">Blackbeard Pirates</a></li>
+                                <li><a class="nav-link" href="character.html#straw">Whitebeard Pirates</a></li>
                             </ul>
                         </div>
                         <div class="col-3">
                             <h4><a href="" class="nav-link">Product</a></h4>
                             <ul class="nav">
-                                <li><a class="nav-link" href="#">One Piece Figure</a></li>
-                                <li><a class="nav-link" href="#">Collection Figure</a></li>
+                                <li><a class="nav-link" href="product.html#solo">One Piece Figure</a></li>
+                                <li><a class="nav-link" href="product.html#collection">Collection Figure</a></li>
                             </ul>
                         </div>
                         <div class="col-3">
                             <h4><a href="" class="nav-link">About</a></h4>
                             <ul class="nav">
-                                <li><a class="nav-link" href="#">About us</a></li>
+                                <li><a class="nav-link" href="about.html#about">About us</a></li>
                             </ul>
                             <ul class="nav">
-                                <li><a class="nav-link" href="#">Contact Us</a></li>
+                                <li><a class="nav-link" href="about.html#contact">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -182,6 +835,7 @@
             </div>
         </div>
     </footer>
+    <!-- end of footer -->
     <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

@@ -1,0 +1,48 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+footer .copy{
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+footer .nav-link{
+    color: black;
+}
+footer .nav-link:hover{
+    border-bottom: 1px solid black;
+    color: black;
+}
+footer{
+    margin-bottom: 10px;
+}
+nav .nav-link{
+    color: black;
+}
+nav .active{
+    border-bottom: 1px solid black;
+    color: black;
+}
+nav .nav-link:hover{
+    border-bottom: 1px solid black;
+    color: black;
+}
+.logo{
+    width: 50px;
+}
+main section{
+    width: 100dvw;
+    min-height: 100dvh;
+}
+main section .carousel-item .img{
+    width: 100%;
+    height: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+main section .card-body .img-fluid{
+    width: 100%;
+}
