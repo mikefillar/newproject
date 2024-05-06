@@ -1,0 +1,75 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* main{
+    background-color: aqua;
+} */
+main section{
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /* font-family: 'One Piece', sans-serif; */
+}
+main section .adventure{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+}
+main .join{
+    background-image: url("x-mark.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+}
+main .join .sign-up{
+    width: 30dvw;
+    height: 40dvh;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+footer .copy{
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+main .hidden{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+}
+main .show{
+    opacity: 1;
+    filter: blur(0);
+}
+
+footer .nav-link{
+    color: black;
+}
+footer .nav-link:hover{
+    border-bottom: 1px solid black;
+    color: black;
+}
+footer{
+    margin-bottom: 10px;
+}
+nav .nav-link{
+    color: black;
+}
+nav .active{
+    border-bottom: 1px solid black;
+    color: black;
+}
+nav .nav-link:hover{
+    border-bottom: 1px solid black;
+    color: black;
+}
+.logo{
+    width: 50px;
+}
